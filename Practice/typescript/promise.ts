@@ -8,7 +8,7 @@
  * reject (동작 실패)
  */
 
-const condition: boolean = false;
+const condition: boolean = true;
 
 const promise = new Promise((resolve, reject) => {
 
@@ -23,3 +23,25 @@ const promise = new Promise((resolve, reject) => {
 promise
     .then((data): void => console.log(`우왕 then ${data}`))
     .catch(err => console.log("오마갓", err));
+
+
+const secondPromise = new Promise(function(resolve, reject) {
+    if (condition) {
+        resolve('ㅋㅋ 성공~ 이거전달?');
+    } 
+    else {
+        reject(new Error("에러..^^"));
+    }
+})
+
+secondPromise
+    .then((data) => {
+        
+        // 작업 성공
+        console.log(data)
+    })
+    .catch((err) => {
+
+        // 작업 실패
+        console.log(err)
+    })
