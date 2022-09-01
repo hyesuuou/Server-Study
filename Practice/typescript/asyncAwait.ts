@@ -57,6 +57,7 @@ asyncFunc1('hi')
     console.log(result);
 });
 
+// async, await 사용
 const asyncMain = async (): Promise<void> => {
     let result = await asyncFunc1('hi');
     console.log(result);
