@@ -1,6 +1,7 @@
 // swift 에서 구조체나 클래스 같은걸까 ..?
 
 // { key: value 형태 }
+
 const person = {
     age: 25, 
     name: '혜수',
