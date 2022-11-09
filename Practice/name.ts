@@ -1,3 +1,3 @@
-const myName = "혜수";
+const myNamez = "혜수";
 
-console.log(myName);
+console.log(myNamez);
